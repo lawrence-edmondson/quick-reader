@@ -20,10 +20,10 @@ In order to run this code you need the following
 
 ## Screens
 ### Logo
-<img src="https://github.com/lawrence-edmondson/quick-read/blob/master/readme-images/quick-read-logo.png" height="400px">
+<img src="https://github.com/lawrence-edmondson/quick-reader/blob/master/readme-images/quick-read-logo.png" height="400px">
 
 <div style="float:left;width:100%">
-<img src="https://github.com/lawrence-edmondson/quick-read/blob/master/readme-images/screen1.png" height="500px">
-<img src="https://github.com/lawrence-edmondson/quick-read/blob/master/readme-images/screen2.png" height="500px">
-<img src="https://github.com/lawrence-edmondson/quick-read/blob/master/readme-images/screen3.png" height="500px">
+<img src="https://github.com/lawrence-edmondson/quick-reader/blob/master/readme-images/screen1.png" height="500px">
+<img src="https://github.com/lawrence-edmondson/quick-reader/blob/master/readme-images/screen2.png" height="500px">
+<img src="https://github.com/lawrence-edmondson/quick-reader/blob/master/readme-images/screen3.png" height="500px">
  </div>
