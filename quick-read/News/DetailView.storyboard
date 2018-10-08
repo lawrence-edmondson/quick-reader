@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail-->
+        <scene sceneID="9Kv-ot-wx9">
+            <objects>
+                <viewController storyboardIdentifier="Detail" title="Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iZU-FQ-3xv" customClass="DetailViewController" customModule="spin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P6r-sa-hk5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView opaque="NO" contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="auH-VF-ElD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="PMB-cq-dnt">
+                                <rect key="frame" x="178" y="292" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="auH-VF-ElD" firstAttribute="height" secondItem="P6r-sa-hk5" secondAttribute="height" id="18j-W1-4B2"/>
+                            <constraint firstItem="auH-VF-ElD" firstAttribute="leading" secondItem="P6r-sa-hk5" secondAttribute="leading" id="FnG-hw-Lb3"/>
+                            <constraint firstItem="auH-VF-ElD" firstAttribute="centerX" secondItem="PMB-cq-dnt" secondAttribute="centerX" id="Q0g-5u-14Q"/>
+                            <constraint firstItem="auH-VF-ElD" firstAttribute="bottom" secondItem="V5C-bb-nRk" secondAttribute="bottom" id="XmT-Mw-Ra1"/>
+                            <constraint firstItem="auH-VF-ElD" firstAttribute="width" secondItem="P6r-sa-hk5" secondAttribute="width" id="ZXB-mt-1Gs"/>
+                            <constraint firstItem="PMB-cq-dnt" firstAttribute="centerY" secondItem="auH-VF-ElD" secondAttribute="centerY" id="oAr-PG-wDP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V5C-bb-nRk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="DsC-gP-mJo"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="loader" destination="PMB-cq-dnt" id="Kae-hB-mgE"/>
+                        <outlet property="webView" destination="auH-VF-ElD" id="7pe-bi-u9c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBH-m1-nlh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1184.8" y="-134.48275862068968"/>
+        </scene>
+    </scenes>
+</document>
